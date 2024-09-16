@@ -1,0 +1,114 @@
+// Custom default sebelum mengambil defaultnya bootstrap
+@import "./custom/variables";
+
+// Mengambil semua sumber daya bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.my-logo {
+  background-color: #0d28a6;
+  width: 100px;
+  height: 34px;
+}
+
+.btn-success {
+  background-color: #5cb85f;
+}
+
+nav {
+  background-color: #f1f3ff;
+}
+
+#home {
+  background-color: #f1f3ff;
+  margin-bottom: 50px;
+
+  .left {
+    padding-left: 12rem;
+    p {
+      padding-right: 14rem;
+    }
+  }
+  img {
+    width: 704px;
+    height: 407px;
+  }
+}
+
+#our-services {
+  padding: 50px 0px;
+
+  .content {
+    gap: 100px;
+  }
+}
+
+#why-us {
+  padding: 50px 0px;
+
+  .card {
+    width: 18rem;
+  }
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+#testimonial {
+  padding: 50px 0px;
+
+  .profile {
+    width: 70px;
+    height: 80px;
+  }
+  .carousel {
+    background-color: #f1f3ff;
+    width: 832px;
+    height: 270px;
+    padding: 0px 150px;
+    .c-px {
+      margin-top: 8px;
+    }
+  }
+  .star-logo {
+    margin-left: 40.38px;
+  }
+}
+
+#book-now {
+  padding-top: 106px;
+  padding-bottom: 50px;
+
+  .container {
+    background-color: #0d28a6;
+    padding: 64px 0px;
+  }
+  p {
+    padding: 0px 400px;
+  }
+}
+
+#FAQ {
+  padding: 50px 0px;
+
+  .accordion {
+    --bs-accordion-border-color: #d4d4d4;
+    --#{$prefix}accordion-active-bg: transparent;
+    --bs-accordion-btn-focus-box-shadow: none;
+  }
+}
+
+footer {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  img {
+    width: 224px;
+    height: 32px;
+  }
+  a {
+    color: black;
+  }
+  a:hover {
+    color: #717175;
+  }
+}
