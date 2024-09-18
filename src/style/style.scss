@@ -23,23 +23,14 @@ nav {
   margin-bottom: 50px;
 
   .left {
-    padding-left: 12rem;
     p {
-      padding-right: 14rem;
+      padding-right: 8rem;
     }
-  }
-  img {
-    width: 704px;
-    height: 407px;
   }
 }
 
 #our-services {
   padding: 50px 0px;
-
-  .content {
-    gap: 100px;
-  }
 }
 
 #why-us {
@@ -65,13 +56,29 @@ nav {
     background-color: #f1f3ff;
     width: 832px;
     height: 270px;
-    padding: 0px 150px;
+    // padding: 0px 150px;
     .c-px {
       margin-top: 8px;
     }
   }
+  .carousel-item {
+    padding: 0px 150px;
+  }
+  .carousel-control-next-icon {
+    width: 56.77px;
+    height: 68px;
+    background-image: url(../../public/assets/fi_chevron-right.svg);
+  }
+  .carousel-control-prev-icon {
+    width: 56.77px;
+    height: 68px;
+    background-image: url(../../public/assets/fi_chevron-left.svg);
+  }
   .star-logo {
-    margin-left: 40.38px;
+    img {
+      width: 81px;
+      height: 16px;
+    }
   }
 }
 
@@ -79,12 +86,10 @@ nav {
   padding-top: 106px;
   padding-bottom: 50px;
 
-  .container {
+  .content {
     background-color: #0d28a6;
-    padding: 64px 0px;
-  }
-  p {
-    padding: 0px 400px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 }
 
@@ -110,5 +115,98 @@ footer {
   }
   a:hover {
     color: #717175;
+  }
+}
+
+// xl
+@media only screen and (max-width: 1400px) {
+  #home {
+    .left {
+      padding-left: 5%;
+    }
+  }
+}
+
+// Lg
+@media only screen and (max-width: 992px) {
+  #home {
+    .left {
+      p {
+        padding-right: 1rem;
+      }
+    }
+  }
+
+  #testimonial {
+    .carousel {
+      width: 600px;
+      height: 392px;
+    }
+    .carousel-item {
+      padding: 0px 80px;
+    }
+  }
+
+  footer {
+    padding-top: 20px;
+  }
+}
+
+// Md
+@media only screen and (max-width: 768px) {
+  .offcanvas {
+    --bs-offcanvas-width: 180px;
+  }
+
+  #why-us {
+    .card {
+      width: 100%;
+    }
+  }
+
+  #testimonial {
+    .carousel {
+      width: 328px;
+      height: 392px;
+    }
+    .carousel-item {
+      padding: 0px 45px;
+    }
+    .carousel-control-next {
+      align-items: start;
+      margin-top: 50px;
+    }
+    .carousel-control-prev {
+      align-items: start;
+      margin-top: 50px;
+    }
+  }
+}
+
+// Sm
+@media only screen and (max-width: 576px) {
+  #home {
+    margin-bottom: 30px;
+  }
+
+  #our-services,
+  #why-us,
+  #testimonial,
+  #book-now,
+  #FAQ,
+  footer {
+    padding: 30px 0px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #testimonial {
+    .carousel {
+      width: 240px;
+      height: 450px;
+    }
+    .carousel-item {
+      padding: 0px 25px;
+    }
   }
 }
