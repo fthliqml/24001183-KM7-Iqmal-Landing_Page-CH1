@@ -1,7 +1,7 @@
-// Custom default sebelum mengambil defaultnya bootstrap
+// Custom default before get resources from bootstrap
 @import "./custom/variables";
 
-// Mengambil semua sumber daya bootstrap
+// Get resources from bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 .my-logo {
